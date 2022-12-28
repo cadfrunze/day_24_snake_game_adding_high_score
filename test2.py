@@ -1,12 +1,7 @@
-x = 3
-
-print(x)
-def test2(x):
-    x = 4
-
-
-
-x = test2(x)
-print(x)
-print(type(x))
+text: str = 'maryus'
+numar: int = 2
+zecimala: float = 2.5
+print(numar)
+print(zecimala)
+print(text)
 

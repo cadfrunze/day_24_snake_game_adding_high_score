@@ -32,10 +32,12 @@ while jocul:
         snake_food.refresh()
     # Detect collision with wall
     if sarpele.head.xcor() > 299 or sarpele.head.xcor() < -299 or sarpele.head.ycor() > 299 or sarpele.head.ycor() < -299:
-        jocul = False
-        scorul.game_over()
-    elif sarpele.collision() == False:
-        jocul = False
-        scorul.game_over_muscat()
+        # jocul = False
+        # scorul.game_over()
+        scorul.reset_score()
+    elif sarpele.collision():
+        # jocul = False
+        # scorul.game_over_muscat()
+        scorul.reset_score()
 
 screen.exitonclick()
