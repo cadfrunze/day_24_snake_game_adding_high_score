@@ -1,4 +1,5 @@
-file = open("my_file.txt")
-continut = file.read()
-print(continut)
-file.close()
+
+with open("my_file.txt") as file:
+    continut = file.read()
+    print(continut)
+
