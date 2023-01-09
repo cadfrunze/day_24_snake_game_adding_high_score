@@ -34,10 +34,12 @@ while jocul:
     if sarpele.head.xcor() > 299 or sarpele.head.xcor() < -299 or sarpele.head.ycor() > 299 or sarpele.head.ycor() < -299:
         # jocul = False
         # scorul.game_over()
+        sarpele.reset_snake()
         scorul.reset_score()
     elif sarpele.collision():
         # jocul = False
         # scorul.game_over_muscat()
+        sarpele.reset_snake()
         scorul.reset_score()
 
 screen.exitonclick()

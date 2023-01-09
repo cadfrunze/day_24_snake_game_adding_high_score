@@ -48,6 +48,14 @@ class Snake(Turtle):
             if self.head.distance(num_piesa) < 10:
                 return True
 
+    def reset_snake(self):
+        for seg in self.segmente:
+            seg.goto(1000, 1000)
+        self.segmente.clear()
+        self.create_snake()
+        self.head = self.segmente[0]
+
+
     # Directiile
 
     def move_up(self):
