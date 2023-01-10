@@ -1,15 +1,10 @@
+with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt") as file:
+    data = file.read()
+    print(data)
 
-with open("data.txt", mode="r") as file:
-    continut = file.read()
+with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt", mode="a") as file:
+    file.writelines("\nAm reusit!!!!!")
 
-
-a = 5
-with open("data.txt", mode="w") as file:
-    file.write(str(a))
-
-print(continut)
-
-
-
-
-
+with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt") as file:
+    data1 = file.read()
+    print(data1)
