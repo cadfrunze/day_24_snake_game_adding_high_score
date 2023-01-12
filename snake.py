@@ -56,6 +56,14 @@ class Snake(Turtle):
         self.head = self.segmente[0]
 
 
+    def reset_sarpele(self):
+        for seg in range(0, len(self.segmente)):
+            del seg
+
+        # self.segmente.clear()
+        self.create_snake()
+        self.head = self.segmente[0]
+
     # Directiile
 
     def move_up(self):

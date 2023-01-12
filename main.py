@@ -36,10 +36,12 @@ while jocul:
         # scorul.game_over()
         sarpele.reset_snake()
         scorul.reset_score()
+        sarpele.reset_sarpele()
     elif sarpele.collision():
         # jocul = False
         # scorul.game_over_muscat()
         sarpele.reset_snake()
         scorul.reset_score()
+        sarpele.reset_sarpele()
 
 screen.exitonclick()

@@ -1,10 +1,7 @@
-with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt") as file:
-    data = file.read()
-    print(data)
+text: str = 'maryus'
+numar: int = 2
+zecimala: float = 2.5
+print(numar)
+print(zecimala)
+print(text)
 
-with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt", mode="a") as file:
-    file.writelines("\nAm reusit!!!!!")
-
-with open("../day_24_snake_game_adding_high_score/../.././Desktop/my_file.txt") as file:
-    data1 = file.read()
-    print(data1)
